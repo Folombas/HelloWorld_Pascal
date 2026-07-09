@@ -1,0 +1,15 @@
+# Compiled binaries
+*.o
+*.ppu
+*.exe
+
+# Lazarus files
+*.lps
+*.lpi
+*.res
+*.rst
+*.lrt
+*.compiled
+
+# Binary
+hello
