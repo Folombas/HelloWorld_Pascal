@@ -7,4 +7,4 @@ begin
 	m := t div 60;
 	s := t mod 60;
 	write(m, ' мин.', s, ' c.');
-end;
+end.

@@ -1,15 +1,10 @@
-# Compiled binaries
+# Скомпилированные бинарники Free Pascal
 *.o
 *.ppu
-*.exe
-
-# Lazarus files
-*.lps
-*.lpi
-*.res
-*.rst
-*.lrt
+*.a
+*.so
 *.compiled
 
-# Binary
-hello
+# Временные файлы
+*.bak
+*~
