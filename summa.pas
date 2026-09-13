@@ -1,9 +1,8 @@
 program summa;
-var
-	a, b, c: integer;
+var a, b, sum: integer;
 begin
 	a := 5;
 	b := 6;
 	
-writeln(sum);
+write(sum);
 end.
