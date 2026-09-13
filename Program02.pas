@@ -1,14 +1,23 @@
 program  Program2;
 
 var
-	t, m, s, ch: integer;
+	t, d, h, m, s: integer;
 	
 begin
 	write('Введите число секунд: ');
-	read(t);
-	ch := t div (60*60);
-	t := t mod (60*60);
-	m := t div 60;
-	s := t mod 60;
-	write(ch, ' ч.' ,m, ' мин.', s, ' c.');
+	read(t);				// readln безопаснее: съедает Enter после ввода
+	
+	d := t div 86400;		// целые дни
+	t := t mod 86400;		// остаток после вычета дней
+	
+	h := t div 3600;		// целые часы
+	t := t mod 3600;		// остаток после вычета часов 
+	
+	m := t div 60; 			// целые минуты
+	s := t mod 60;			// остаток секунд
+	
+	if d > 0 then
+		write(d, ' д. ');	// выводим дни, только если они есть
+		
+	write(h, ' ч. ', m, ' мин. ', s, ' с.');
 end.
