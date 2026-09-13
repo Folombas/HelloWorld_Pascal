@@ -1,11 +1,11 @@
 program  Program2;
 
 var
-	t, d, h, m, s: integer;
+	t, d, h, m, s: Int64;		// было integer, стало Int64
 	
 begin
 	write('Введите число секунд: ');
-	read(t);				// readln безопаснее: съедает Enter после ввода
+	readln(t);				// readln безопаснее: съедает Enter после ввода
 	
 	d := t div 86400;		// целые дни
 	t := t mod 86400;		// остаток после вычета дней
