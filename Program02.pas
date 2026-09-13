@@ -1,0 +1,14 @@
+program  Program2;
+
+var
+	t, m, s, ch: integer;
+	
+begin
+	write('Введите число секунд: ');
+	read(t);
+	ch := t div (60*60);
+	t := mod (60*60);
+	m := t div 60;
+	d := t mod 60;
+	write(ch, ' ч.' ,m, ' мин.', s, ' c.');
+end.
